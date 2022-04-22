@@ -17,6 +17,8 @@
     position: absolute;
     height: 100%;
     width: 100%;
+    top: 0px;
+    left: 0px;
     z-index: -1;
     opacity: 0.4;
 }
@@ -63,15 +65,17 @@
     justify-content: center;
     align-items: center;
     padding: 3px 200px;
-    height: 400px;
+    height: 423px;
 }
 
 #home::before{
     content: "";
     background: url(../bg1.jpg) no-repeat center center/cover;
     position: absolute;
-    height: 100%;
+    height: 501px;
     width: 100%;
+    top: 0px;
+    left: 0px;
     z-index: -1;
     opacity: 0.89;
 }
@@ -88,10 +92,118 @@
     font-family: 'Bree Serif', serif;
 }
 
+#services{
+    display: flex;
+    margin: 34px;
+}
+
+#services .box{
+    border: 2px solid brown;
+    text-align: center;
+    background-color: rgb(236, 236, 227);
+    margin: 3px;
+    border-radius: 13px;
+    padding: 25px 13px;
+
+}
+
+#services .box img{
+    height: 101px;
+    margin: auto;
+    display: block;
+
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* Client-section */
+
+#client-section{
+    height: 281px;
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../bg.jpg');
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.client-item img{
+    height: 95px;
+    padding: 34px;
+}
+
+/* Contact-Details */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('../contact.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#contact-box{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 34px;
+
+}
+
+#contact-box input,textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Footer-Details */
+
+footer{
+    background-color: rgb(41, 43, 44);
+    color: white;
+}
+
+/* Utitlites Tools */
+
 .h-primary{
     font-size: 2.3rem;
     text-align: center;
     padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
 }
 
 .btn{
@@ -107,4 +219,8 @@
 .btn:hover{
     background-color: white;
     color: orange;
+}
+
+.center{
+    text-align: center;
 }
