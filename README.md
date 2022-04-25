@@ -1,3 +1,3 @@
 # Food-Webpage
-A food Webpage
-Bxbznzn
+A food Webpage(Static)
+made up by using Html & Css.
